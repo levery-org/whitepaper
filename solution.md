@@ -1,5 +1,7 @@
 # Solution
 
+## Levery Enables DEFI for Financial Institutions
+
 Levery provides a transformative platform for financial institutions to engage with DeFi markets, delivering both enhanced profitability and compliance assurance. The key advantages include:
 
 ### **Mitigation of Impermanent Loss and Toxic Arbitrage**
