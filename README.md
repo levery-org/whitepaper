@@ -1,4 +1,4 @@
-# 📝 Levery Whitepaper
+# Levery Whitepaper
 
 ## Abstract
 

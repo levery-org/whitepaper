@@ -5,15 +5,15 @@
 * [Problem Statement](problem-statement.md)
 * [Solution](solution.md)
 
-## identity
+## Technical Framework
 
-* [Logos](identity/logos.md)
-* [Colors](identity/colors.md)
-* [Typography](identity/typography.md)
-* [Imagery](identity/imagery.md)
+* [Uniswap V4's Hook Features](technical-framework/uniswap-v4s-hook-features.md)
+* [Chainlink Oracle](technical-framework/chainlink-oracle.md)
+* [Typography](technical-framework/typography.md)
+* [Imagery](technical-framework/imagery.md)
 
-## Components
+## Compliance Framework
 
-* [Icons](components/icons.md)
-* [Buttons](components/buttons.md)
-* [Inputs](components/inputs.md)
+* [Icons](compliance-framework/icons.md)
+* [Buttons](compliance-framework/buttons.md)
+* [Inputs](compliance-framework/inputs.md)
