@@ -1,12 +1,9 @@
 # Table of contents
 
 * [📝 Levery Whitepaper](README.md)
-
-## INTRODUCTION
-
-* [Problem Statement](introduction/problem-statement.md)
-* [Technical Framework](introduction/technical-framework.md)
-* [Strategic Impact](introduction/strategic-impact.md)
+* [Introduction](introduction.md)
+* [Problem Statement](problem-statement.md)
+* [Solution](solution.md)
 
 ## identity
 
