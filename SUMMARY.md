@@ -1,13 +1,12 @@
 # Table of contents
 
-* [🖌️ Getting started](README.md)
+* [📝 Levery Whitepaper](README.md)
 
 ## INTRODUCTION
 
-* [Design Principles](introduction/design-principles.md)
-* [Brand Guidelines](introduction/brand-guidelines.md)
-* [How updates work](introduction/how-updates-work.md)
-* [Accessibility](introduction/accessibility.md)
+* [Problem Statement](introduction/problem-statement.md)
+* [Technical Framework](introduction/technical-framework.md)
+* [Strategic Impact](introduction/strategic-impact.md)
 
 ## identity
 
