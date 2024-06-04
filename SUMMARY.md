@@ -1,6 +1,6 @@
 # Table of contents
 
-* [📝 Levery Whitepaper](README.md)
+* [Levery Whitepaper](README.md)
 * [Introduction](introduction.md)
 * [Problem Statement](problem-statement.md)
 * [Solution](solution.md)
