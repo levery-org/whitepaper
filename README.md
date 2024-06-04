@@ -1,9 +1,9 @@
 # 🖌️ Getting started
 
-## Welcome !
+## Welcome
 
-A design system is a product, and similar best practices to product docs apply when documenting a design system. Offering succinct ways to get started is a great way to introduce the concepts of your design system, while empowering folks to use it for their needs.
+Leveraging AML, KYC, and strict compliance frameworks, Levery enables financial institutions to safely engage in DeFi markets, using Uniswap V4 hook features to effectively mitigate impermanent loss.
 
 {% hint style="info" %}
-Use this template to introduce the concept of your design system. Outlining basic principles and ways of working to get every team on the same page.
+Powered by Uniswap
 {% endhint %}
