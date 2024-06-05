@@ -4,7 +4,7 @@ Levery integrates Chainlink's Price Feed oracle to access accurate and dependabl
 
 ### **Levery’s Use of Price Oracles**
 
-The integration of price feeds into Levery’s platform underscores a commitment to providing a secure, fair, and efficient trading environment. The decentralized approach to data aggregation not only enhances the reliability of price information but also aligns with Levery’s objective to maintain transparency and trust in its operations. As Levery continues to grow and evolve, Chainlink’s oracles will play a pivotal role in its ecosystem, supporting a wide range of applications and services within the DeFi space.
+Levery leverages the price feeds for several critical functionalities:
 
 **Dynamic Fee Calculation**
 
@@ -18,7 +18,7 @@ Accurate price information is essential for fair trade execution on Levery's pla
 
 By integrating timely and accurate price data, Levery can identify and mitigate potential arbitrage opportunities that could be exploited due to price discrepancies across different markets. This ensures that the platform remains secure and profitable for all users.
 
-### **The Price Oracles**
+### **How the Price Oracles Works**
 
 **Data Aggregation**
 
@@ -35,6 +35,10 @@ This feature enhances the efficiency of data aggregation by allowing oracles to 
 **Consumer and Proxy Contracts**
 
 Consumer contracts are smart contracts that utilize the aggregated data. They interact with proxy contracts that point to the latest version of the aggregator contract, ensuring that upgrades to the data feed do not disrupt service.
+
+### **Ensuring Market Integrity through Advanced Data Integration**
+
+The incorporation of decentralized price feeds into Levery's framework highlights a trading environment that is secure, fair and efficient. This decentralized method of data aggregation bolsters the reliability of price information, which is pivotal in upholding transparency and trust within Levery's operations. By aligning with these core values, the integration plays a critical role in supporting the integrity and efficiency of the trading system.
 
 
 
