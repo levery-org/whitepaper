@@ -19,3 +19,12 @@ By leveraging Uniswap V4’s hooks to implement dynamic fees based on real-time 
 ### **Secure and Transparent Environment**
 
 The use of comprehensive identity checks and permission management systems guarantees a secure trading environment where all participants are verified. This transparency builds trust and facilitates smoother transactions, attracting more institutional participants to the platform.
+
+### **Resources**
+
+Levery leverages a combination of cutting-edge technology and robust compliance mechanisms to offer the following resources:
+
+* **Real-time Oracle Data:** Integration with Chainlink oracles provides up-to-the-minute price information, crucial for maintaining fair pricing and mitigating arbitrage risks.
+* **Dynamic Fee Mechanisms:** Automated adjustments of transaction fees based on market data protect LPs from losses and enhance profitability.
+* **Comprehensive Compliance Tools:** Includes KYC, AML, and CFT protocols, ensuring that every transaction adheres to regulatory standards.
+* **User Verification and Access Control:** Ensures that only authenticated users can perform critical operations, maintaining the integrity and security of the platform.

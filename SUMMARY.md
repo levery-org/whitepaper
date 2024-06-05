@@ -7,7 +7,8 @@
 
 ## Technical Framework
 
-* [Uniswap V4's Hook Features](technical-framework/uniswap-v4s-hook-features.md)
+* [Core Components](technical-framework/core-components.md)
+* [Uniswap V4 Hook](technical-framework/uniswap-v4-hook.md)
 * [Chainlink Oracle](technical-framework/chainlink-oracle.md)
 * [Typography](technical-framework/typography.md)
 * [Imagery](technical-framework/imagery.md)
