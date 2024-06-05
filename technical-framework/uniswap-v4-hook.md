@@ -4,21 +4,26 @@
 
 Uniswap, a prominent decentralized exchange (DEX), has significantly shaped the DeFi landscape by providing an automated mechanism for token exchanges. It uses liquidity pools instead of traditional market orders, allowing for decentralized, permissionless trading.
 
-1. **Uniswap V1 (2018):** Introduced the foundational AMM concept using a constant product formula (xy=k) to facilitate exchanges between ETH and ERC-20 tokens.
-2. **Uniswap V2 (2020):** Enhanced the functionality by supporting direct ERC-20 to ERC-20 exchanges and introducing features such as Flash Swaps and a TWAP oracle for better price accuracy and more complex trade routes.
-3. **Uniswap V3 (2021):** Advanced the model with concentrated liquidity, allowing liquidity providers (LPs) to specify price ranges for their funds, thereby optimizing capital efficiency and reducing impermanent loss.
-4. **Uniswap V4 (**Deployment on the Ethereum Mainnet is expected sometime in Q2 of 2024**):** Incorporates a revolutionary Singleton design that centralizes pool management, significantly reducing operational complexity and gas costs. It introduces hooks that allow for customization of pool behavior through smart contract integrations.
+Uniswap is a decentralized exchange (DEX) that has significantly shaped the decentralized finance (DeFi) landscape by allowing automated swapping of ERC-20 tokens via a series of smart contract-driven liquidity pools. It eliminates the need for traditional market-making processes, facilitating seamless, trustless token swaps directly on the Ethereum blockchain.
+
+1. **Uniswap V1 (2018):** The first version introduced the automated market maker (AMM) model using a constant product formula (xy = k). It allowed for direct swaps between Ethereum (ETH) and any ERC-20 token, setting the foundational structure for decentralized exchanges.
+2. **Uniswap V2 (2020):** Building on the initial design, V2 introduced ERC-20 to ERC-20 swaps, enhanced price oracle functionality, and added features like flash swaps, broadening the scope and flexibility of the platform.
+3. **Uniswap V3 (2021):** V3 further innovated by introducing concentrated liquidity and multiple fee tiers. This allowed liquidity providers to allocate their funds within custom price ranges, enhancing capital efficiency and market depth.
+4. **Uniswap V4 (Expected Deployment in Q2 of 2024):** The forthcoming V4 introduces a revolutionary Singleton design, reducing gas costs and improving transaction efficiency. It consolidates all liquidity pools into a single contract and introduces advanced features like hooks, flash accounting, and direct native ETH support.
 
 ### **Technical Architecture of Uniswap V4**
 
-Uniswap V4 introduces a Singleton design where all liquidity pools are managed by a single `PoolManager` contract. This contract uses Solidity libraries to handle pool-specific functionalities, which simplifies the deployment and management of pools:
+Uniswap V4 introduces significant architectural advancements with its Singleton contract structure, replacing the multiple contracts per pair in earlier versions. This consolidation significantly reduces gas costs and simplifies the creation and management of liquidity pools by enabling all transactions to occur within a single contract. This not only reduces the operational overhead but also decreases the gas costs for trading and pool creation by up to 99%.
 
-* **Library-Based Pool Management:** Each pool is a collection of functions within a library, drastically reducing the need for deploying separate contracts for each pool. This modular approach allows functions like `swap()` and `modifyPosition()` to be called on a per-pool basis using shared state structures.
-* **State Consolidation:** The `PoolManager` maintains a mapping of pool states, enabling centralized control and updates. This structure supports complex operations like multi-hop swaps and liquidity adjustments without the need for external contract calls, enhancing transaction efficiency.
+Another novel feature in V4 is the flash accounting system, which allows users to chain multiple actions, like swaps and liquidity additions, in a single transaction. This system ensures all token balances are settled by the end of the transaction, reverting if the debts are not properly cleared, thus enhancing transaction security and efficiency.
+
+V4 also introduces hooks, which are customizable smart contracts that can be attached to liquidity pools to allow specific functionalities to be executed at various stages of the pool's lifecycle.&#x20;
+
+Additionally, V4 supports direct trading pairs with native Ethereum (ETH), eliminating the need for wrapped ETH and streamlining the trading process. This adjustment not only simplifies the trading steps but also potentially lowers transaction fees.
 
 ### **What is a Hook in Uniswap V4?**
 
-In Uniswap V4, hooks are smart contract functions that integrate directly into the liquidity pool's operational flow, enabling developers to inject custom logic at predefined stages of the transaction lifecycle. These hooks can trigger before or after key events such as swaps, liquidity additions, or removals. The hooks' capability to adapt the behavior of the DEX without altering the core architecture is a significant innovation, facilitating bespoke functionalities tailored to specific needs.
+Hooks in Uniswap V4 are programmable smart contracts that can be attached to liquidity pools to modify their behavior at crucial operational stages, such as before and after swaps, or during liquidity changes. These hooks provide developers with the ability to implement customized functionalities, ranging from transaction validation processes to complex fee-adjustment algorithms, directly within the liquidity pool's lifecycle.
 
 ### **Levery’s Strategic Use of Uniswap V4 Hooks**
 
