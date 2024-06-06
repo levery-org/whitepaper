@@ -1,4 +1,4 @@
-# Price Feed Oracle Integration
+# Price Feed Oracle
 
 Levery integrates Chainlink's Price Feed oracle to access accurate and dependable market price data, which is essential for maintaining equitable pricing and computing dynamic fees within its platform. Utilizing a sophisticated Decentralized Data Model along with Offchain Reporting (OCR), these price feeds aggregate data effectively. This approach allows Levery to guarantee the integrity and precision of its calculations, ensuring that all pricing and fee adjustments are grounded in reliable and current market information.
 
