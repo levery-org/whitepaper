@@ -4,17 +4,17 @@
 
 Levery provides a transformative platform for financial institutions to engage with DeFi markets, delivering both enhanced profitability and compliance assurance. The key advantages include:
 
-### **Mitigation of Impermanent Loss and Toxic Arbitrage**
-
-Levery's integration of real-time price feeds and dynamic fee adjustments directly addresses the risks associated with price latency and toxic arbitrage. By ensuring that pool prices reflect current market conditions, Levery protects liquidity providers from the volatility and rapid price movements characteristic of DeFi markets.
-
 ### **Regulatory Compliance**
 
 Designed with stringent AML and KYC frameworks, Levery enables financial institutions to participate in DeFi without compromising on compliance. This ensures that all operations on the platform meet global regulatory standards, making it a viable and attractive option for institutional investors.
 
-### **Enhanced Profitability for Liquidity Providers**
+### Elimination of Counterparty Risk
 
-By leveraging Uniswap V4’s hooks to implement dynamic fees based on real-time data, Levery ensures that liquidity providers receive optimal returns on their investments. The platform’s ability to adjust fees in response to market conditions means that LPs can achieve up to 20 times more earnings compared to traditional DeFi platforms.
+Levery’s decentralized nature eliminates the counterparty risk associated with centralized exchanges (CEXs). By removing the need to trust a single entity, Levery ensures that transactions are secure and transparent. This addresses the concerns raised by the history of fraud and insolvency seen in some CEXs, such as the collapse of FTX.
+
+### **Mitigation of Impermanent Loss and Toxic Arbitrage**
+
+Levery enhances profitability for liquidity providers by leveraging Uniswap V4's hooks to implement dynamic fees based on real-time data from price feed oracles. These oracles supply crucial market price information, allowing for precise adjustments of dynamic fees to maintain fair pricing and mitigate toxic arbitrage risks. This mechanism optimizes returns on investments for liquidity providers and significantly reduces the impact of impermanent loss by ensuring that pool prices reflect current market conditions.
 
 ### **Secure and Transparent Environment**
 
@@ -24,7 +24,7 @@ The use of comprehensive identity checks and permission management systems guara
 
 Levery leverages a combination of cutting-edge technology and robust compliance mechanisms to offer the following resources:
 
-* **Real-time Market Price Oracle:** Integration with Chainlink oracles provides market price information, crucial for maintaining fair pricing and mitigating arbitrage risks.
-* **Dynamic Fee Mechanisms:** Automated adjustments of transaction fees based on market data protect LPs from losses and enhance profitability.
-* **Comprehensive Compliance Tools:** Includes KYC, AML, and CFT protocols, ensuring that every transaction adheres to regulatory standards.
-* **User Verification and Access Control:** Ensures that only authenticated users can perform critical operations, maintaining the integrity and security of the platform.
+* **Decentralized Architecture:** Levery’s decentralized structure mitigates the counterparty risks associated with CEXs, providing a secure and reliable platform for transactions without the need for centralized trust.
+* **Comprehensive Compliance Tools:** Includes KYC, AML, and CFT protocols, ensuring that only authenticated users can perform critical operations and that every transaction adheres to regulatory standards, maintaining the integrity and security of the platform.&#x20;
+* **Advanced Liquidity Management:** Levery employs sophisticated algorithms for liquidity management, such as dynamic fee mechanisms that automated adjustments of transaction fees based on market price for protect LPs from impermanent loss and enhance profitability.
+* **Multisig Wallet Integration** By integrating with Safe, Levery enhances security through multisignature wallets, ensuring that all transactions require multiple approvals, thus reducing the risk of unauthorized actions.
