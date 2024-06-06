@@ -40,5 +40,3 @@ The user verification process in Levery involves some key steps to ensure that a
 2. **Document Verification:** Advanced tools are used to verify the authenticity of the provided documents. This includes checking the validity of IDs, comparing faces in selfies with ID photos, and verifying addresses.
 3. **Background Checks:** For business entities, additional checks are conducted to verify business registration documents, beneficial ownership, and financial records.
 4. **Ongoing Monitoring:** Once verified, user activities are continuously monitored to detect and prevent any suspicious or fraudulent activities. This ongoing monitoring ensures that the platform remains secure and compliant.
-
-By integrating advanced KYC and KYB tools, Levery ensures a secure, compliant, and efficient platform for all its users, enabling financial institutions to confidently engage with the DeFi ecosystem.
