@@ -21,7 +21,7 @@
 ## Aditional Info
 
 * [Team](aditional-info/team.md)
-* [Official Links](aditional-info/official-links.md)
+* [Links](aditional-info/links.md)
 * [Disclosures](aditional-info/disclosures.md)
 * [Icons](aditional-info/icons.md)
 * [Buttons](aditional-info/buttons.md)
