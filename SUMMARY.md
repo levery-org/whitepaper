@@ -15,6 +15,7 @@
 ## Compliance Framework
 
 * [Overview](compliance-framework/overview.md)
+* [KYC / KYB and AML](compliance-framework/kyc-kyb-and-aml.md)
 * [Icons](compliance-framework/icons.md)
 * [Buttons](compliance-framework/buttons.md)
 * [Inputs](compliance-framework/inputs.md)
