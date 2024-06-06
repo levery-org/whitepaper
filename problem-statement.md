@@ -30,3 +30,17 @@ Slippage in the context of a DEX occurs when there is a difference between the e
 
 Addressing these problems requires sophisticated solutions that can align DEX functionalities with the needs of liquidity providers and regulatory requirements of financial institutions. By implementing real-time oracle data for accurate price feeds and leveraging Uniswap V4's hook features to to dynamically adjust of fees based on market conditions, and improved algorithms for balancing pool assets, Levery aim to safeguard investments and ensure compliance, thereby fostering a more stable and trustworthy DeFi ecosystem.
 
+### **Counterparty Risk in Centralized Exchanges (CEXs)**
+
+Financial institutions face significant risks when dealing with centralized exchanges (CEXs), particularly due to counterparty risk and the history of fraud associated with some exchanges. High-profile incidents, such as the collapse of FTX and other exchanges, have highlighted the vulnerabilities inherent in centralized systems.
+
+**Counterparty Risk**
+
+When financial institutions engage in transactions through CEXs, they are exposed to the risk that the counterparty might default on their obligations. This risk is heightened by the lack of transparency in the operations of some CEXs, making it difficult to assess the financial health and integrity of the exchange.
+
+**History of Fraud and Insolvency**
+
+The history of fraud and insolvency in CEXs has led to significant financial losses for users. Incidents like the FTX collapse underscore the dangers of relying on centralized entities that may engage in fraudulent activities or face liquidity crises. These events erode trust and highlight the need for decentralized solutions that mitigate such risks.
+
+Addressing these problems requires sophisticated solutions that can align DEX functionalities with the needs of liquidity providers and the regulatory requirements of financial institutions. By implementing real-time oracle data for accurate price feeds and leveraging Uniswap V4's hook features to dynamically adjust fees based on market conditions and improved algorithms for balancing pool assets, Levery aims to safeguard investments and ensure compliance, thereby fostering a more stable and trustworthy DeFi ecosystem.
+

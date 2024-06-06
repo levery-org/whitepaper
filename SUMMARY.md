@@ -9,7 +9,7 @@
 
 * [Core Components](technical-framework/core-components.md)
 * [Uniswap V4 Hook](technical-framework/uniswap-v4-hook.md)
-* [Price Feed Oracle Integration](technical-framework/price-feed-oracle-integration.md)
+* [Price Feed Oracle](technical-framework/price-feed-oracle.md)
 * [Safe App](technical-framework/safe-app.md)
 * [Imagery](technical-framework/imagery.md)
 
