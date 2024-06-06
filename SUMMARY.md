@@ -11,10 +11,10 @@
 * [Uniswap V4 Hook](technical-framework/uniswap-v4-hook.md)
 * [Price Feed Oracle](technical-framework/price-feed-oracle-integration.md)
 * [Safe App](technical-framework/safe-app.md)
-* [Imagery](technical-framework/imagery.md)
 
 ## Compliance Framework
 
+* [Overview](compliance-framework/overview.md)
 * [Icons](compliance-framework/icons.md)
 * [Buttons](compliance-framework/buttons.md)
 * [Inputs](compliance-framework/inputs.md)
