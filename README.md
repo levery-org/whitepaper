@@ -7,3 +7,5 @@ Levery is a decentralized exchange (DEX) initiative designed to bridge the compl
 {% hint style="info" %}
 Levery was developed during the **Uniswap Hook Incubator** / HOOKATHON Cohort 1, an 8-week program by Atrium Academy aimed at advancing DeFi development through Uniswap V4's hooks. Supported by a grant from the **Uniswap Foundation**, this initiative helps developers like the Levery team build enhanced DeFi solutions.
 {% endhint %}
+
+> Levery is currently implemented on the **Sepolia Testnet**, allowing users to interact with the platform in a test environment: [https://test.levery.org](https://test.levery.org/)
