@@ -17,7 +17,12 @@
 * [Overview](compliance-framework/overview.md)
 * [KYC / KYB](compliance-framework/kyc-kyb-and-aml.md)
 * [AML](compliance-framework/aml.md)
-* [Wallet Screening](compliance-framework/wallet-screening.md)
-* [Icons](compliance-framework/icons.md)
-* [Buttons](compliance-framework/buttons.md)
-* [Inputs](compliance-framework/inputs.md)
+
+## Aditional Info
+
+* [Team](aditional-info/team.md)
+* [Official Links](aditional-info/official-links.md)
+* [Disclosures](aditional-info/disclosures.md)
+* [Icons](aditional-info/icons.md)
+* [Buttons](aditional-info/buttons.md)
+* [Inputs](aditional-info/inputs.md)
