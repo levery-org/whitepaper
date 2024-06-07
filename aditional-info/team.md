@@ -2,17 +2,17 @@
 
 ### Meet the Team Behind Levery
 
-**Cristiano Policarpo | Technology Lead**
+**Cristiano Policarpo |** [Twitter](https://twitter.com/0xPolicarpo) | [GitHub ](https://github.com/cristianopolicarpo)| [LinkedIn](https://www.linkedin.com/in/cristiano-policarpo/)
 
-[Twitter](https://twitter.com/0xPolicarpo) | [GitHub ](https://github.com/cristianopolicarpo)| [LinkedIn](https://www.linkedin.com/in/cristiano-policarpo/)
+Cristiano is Founder and CEO at Wireshape and Polygon Advocate LatAm.
 
-Cristiano is Founder and CEO at Wireshape,  Polygon Advocate LatAm,  Angel Investor and Contributor at ethereum.org.
+**Ingrid Gomes |** [Twitter](https://twitter.com/0xIngrid) | [GitHub](https://github.com/ingridmgomes) | [LinkedIn](https://www.linkedin.com/in/ingrid-m-gomes/)
 
-**Ingrid Gomes | Product Lead**
+Ingrid is Founder and Product Lead at Wireshape, Coordinator at the Wireshape Drex Sandbox Program.
 
-[Twitter](https://twitter.com/0xIngrid) | [GitHub](https://github.com/ingridmgomes) | [LinkedIn](https://www.linkedin.com/in/ingrid-m-gomes/)
+Their collaboration as a team extends to Levery. Together they founded Wireshape ([https://wireshape.org](https://wireshape.org/)), an enterprise EVM blockchain network focused on enhancing transparency in supply chain and regulated markets.
 
-Ingris is Founder and Product Lead at @wireshape, Coordinator at the Wireshape Drex Sandbox Program, and Contributor at ethereum.org.
+Their experience spans technical and regulatory frameworks, integrating digital assets into conventional trading platforms while maintaining strict compliance.
 
 ***
 
