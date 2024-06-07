@@ -24,6 +24,8 @@ Levery ensures that traders, or swappers, continue to benefit from competitive p
 
 The use of comprehensive identity checks and permission management systems guarantees a secure trading environment where all participants are verified. This transparency builds trust and facilitates smoother transactions, attracting more institutional participants to the platform.
 
+<figure><img src=".gitbook/assets/swap-screenshot.jpg" alt=""><figcaption></figcaption></figure>
+
 ### Resources
 
 Levery leverages a combination of cutting-edge technology and robust compliance mechanisms to offer the following resources:
