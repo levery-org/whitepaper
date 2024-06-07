@@ -30,6 +30,8 @@ Follow these steps to add and access the Levery Safe App:
 6. **Use Levery Safe App:**
    * Levery DEX will now be available in your custom apps, ready to be used with your Safe{Wallet}.
 
+<figure><img src="../.gitbook/assets/safe-add-levery-screenshot.jpg" alt=""><figcaption></figcaption></figure>
+
 > Levery is currently implemented on the **Sepolia Testnet**, allowing users to interact with the platform in a test environment.
 
 ### **What is Safe?**
