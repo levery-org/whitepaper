@@ -1,6 +1,6 @@
 # Introduction
 
-### Traditional Financial Institutions and DeFi Challenges
+## Traditional Financial Institutions and DeFi Challenges
 
 The rapid expansion of decentralized finance (DeFi) presents unprecedented opportunities for asset management and investment. However, this innovation is not without its challenges, particularly for traditional financial institutions.&#x20;
 

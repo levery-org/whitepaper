@@ -1,6 +1,6 @@
 # Problem Statement
 
-### **Compliance Challenges in DeFi for Traditional Financial Institutions**
+## Compliance Challenges in DeFi for Traditional Financial Institutions
 
 Decentralized exchanges (DEXs) represent a significant shift from traditional financial ecosystems, primarily due to their foundational principles of anonymity and lack of centralized control. While these features are celebrated for promoting financial inclusivity and privacy, they pose significant compliance challenges for traditional financial institutions. These institutions are bound by stringent regulatory frameworks, which mandate thorough Know Your Customer (KYC) and Anti-Money Laundering (AML) checks, designed to prevent financial crimes such as fraud, terrorism financing, and money laundering.
 
@@ -12,13 +12,13 @@ Consequently, there is a crucial need for mechanisms that bridge the gap between
 
 Impermanent loss is a pervasive risk for liquidity providers (LPs) in decentralized exchanges (DEXs), primarily arising from the unique way these platforms manage asset liquidity. Impermanent loss occurs when the relative price of the assets in a liquidity pool changes after they are deposited, and it can be intensified by several factors, including price latency, toxic arbitrage, and the general volatility of the cryptocurrency market.
 
-**Price Latency**
-
-DEXs operate on a model that does not instantaneously reflect live market prices. Price updates in a DEX pool often lag behind those in more centralized markets due to the decentralized nature of blockchain confirmations and updates. This latency can be exploited by arbitrageurs who use sophisticated strategies and faster trading systems to buy assets at a lower price on a DEX and sell them at a higher price on a real-time exchange, effectively removing value from the liquidity pool.
-
 **Toxic Arbitrage**
 
 Toxic arbitrage refers to arbitrage trading that, rather than aligning prices and adding efficiency to the market, actually extracts value from liquidity providers. Arbitrageurs can exacerbate the effects of price latency by systematically exploiting these inefficiencies, which can significantly increase the impermanent loss for unsuspecting LPs. This form of arbitrage is particularly harmful in pools with high price volatility and slow update mechanisms.
+
+**Price Latency**
+
+DEXs can not instantaneously reflect live market prices. Price updates in a DEX pool often lag behind those in more centralized markets due to the decentralized nature of blockchain confirmations and updates. This latency can be exploited by arbitrageurs who use sophisticated strategies and faster trading systems to buy assets at a lower price on a DEX and sell them at a higher price on a real-time exchange, effectively removing value from the liquidity pool.
 
 **Correlation Divergence**
 
@@ -26,11 +26,11 @@ In addition to these factors, the divergence in correlation between paired asset
 
 **Slippage**
 
-Slippage in the context of a DEX occurs when there is a difference between the expected price of a trade and the executed price. High slippage often occurs in pools with low liquidity or during periods of high trading volume. This can affect the stability of the pool and exacerbate impermanent loss as LPs may receive less value for their provided liquidity than expected.
+Slippage in the DEX occurs when there is a difference between the expected price of a trade and the executed price. High slippage often occurs in pools with low liquidity or during periods of high trading volume. This can affect the stability of the pool and exacerbate impermanent loss as LPs may receive less value for their provided liquidity than expected.
 
 Addressing these problems requires sophisticated solutions that can align DEX functionalities with the needs of liquidity providers and regulatory requirements of financial institutions. By implementing real-time oracle data for accurate price feeds and leveraging Uniswap V4's hook features to to dynamically adjust of fees based on market conditions, and improved algorithms for balancing pool assets, Levery aim to safeguard investments and ensure compliance, thereby fostering a more stable and trustworthy DeFi ecosystem.
 
-### **Counterparty Risk in Centralized Exchanges (CEXs)**
+### Counterparty Risk in Centralized Exchanges (CEXs)
 
 Financial institutions face significant risks when dealing with centralized exchanges (CEXs), particularly due to counterparty risk and the history of fraud associated with some exchanges. High-profile incidents, such as the collapse of FTX and other exchanges, have highlighted the vulnerabilities inherent in centralized systems.
 

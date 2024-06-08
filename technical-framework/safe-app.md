@@ -1,12 +1,12 @@
 # Safe App
 
-### Levery Safe App
+## Levery Safe App
 
 The **Levery DEX** Safe App allows users to easily connect and interact with Levery using their Safe Account. This integration ensures that users can manage their digital assets securely and efficiently, leveraging the robust features of Safe’s trusted platform.
 
 <figure><img src="../.gitbook/assets/safe-screenshot.jpg" alt=""><figcaption></figcaption></figure>
 
-**Advantages:**
+### Advantages
 
 * **Multisig Security:** Leveraging Safe’s multisig capabilities, users can ensure that transactions require multiple approvals, enhancing security and reducing the risk of unauthorized actions.
 * **Seamless Integration:** Users can interact with Levery directly from the Safe interface, making it easier to manage assets and perform transactions without switching between different platforms.

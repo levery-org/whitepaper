@@ -6,21 +6,21 @@ Levery leverages the innovative features of Uniswap V4 hooks to enhance regulato
 
 <figure><img src="../.gitbook/assets/hook-swap-flow.jpg" alt=""><figcaption></figcaption></figure>
 
-**Compliance Through Permission Management**
+### Compliance Through Permission Management
 
 Levery utilizes the `PermissionManager` component to enforce compliance controls over who can participate in swaps and liquidity operations. This capability, enabled by the flexibility of Uniswap V4 hooks, integrates comprehensive Know Your Customer (KYC) and Anti-Money Laundering (AML) checks directly into the transaction flow. By ensuring that only verified and compliant users can engage in trading and liquidity activities, Levery aligns with regulatory standards and mitigates potential compliance risks.
 
-* **Fraud Detection and Response:** A critical strategic use of the hooks is the ability to freeze liquidity or block swaps for specific users if fraud is detected. For instance, if a compliance risk is identified or if there is a request from authorities to block a user, Levery can temporarily halt that user's ability to perform swaps or add/remove liquidity. It is important to note that while Levery can restrict actions to maintain compliance and security, the protocol does not allow the use or transfer of users' funds without their consent.
+**Fraud Detection and Response:** A critical strategic use of the hooks is the ability to freeze liquidity or block swaps for specific users if fraud is detected. For instance, if a compliance risk is identified or if there is a request from authorities to block a user, Levery can temporarily halt that user's ability to perform swaps or add/remove liquidity. It is important to note that while Levery can restrict actions to maintain compliance and security, the protocol does not allow the use or transfer of users' funds without their consent.
 
-**Mitigation of Impermanent Loss**
+### Mitigation of Impermanent Loss
 
 Hooks provide Levery with the ability to dynamically adjust transaction fees based on real-time market data sourced from oracles. By aligning fees with current market dynamics, Levery helps protect liquidity providers from impermanent loss. This is achieved by adjusting the fees in response to price fluctuations and market conditions, ensuring that liquidity providers are adequately compensated.
 
-**Enhanced Liquidity Provider Returns**
+### Enhanced Liquidity Provider Returns
 
 The dynamic adjustment of fees ensures that liquidity providers can maximize their returns under varying market conditions. By tailoring fees to reflect real-time data, Levery creates a more attractive environment for liquidity providers, promoting deeper and more stable liquidity pools.
 
-**Operational Efficiency**
+### Operational Efficiency
 
 Uniswap V4’s architecture, supported by hook functionalities, significantly enhances operational efficiency for Levery. The Singleton contract model consolidates all pools into a single contract, which reduces the gas costs and complexity associated with deploying multiple contracts. This results in faster and more cost-effective execution of complex multi-step transactions, benefiting users and liquidity providers alike.
 
@@ -39,7 +39,7 @@ Uniswap is a decentralized exchange (DEX) that has significantly shaped the dece
 3. **Uniswap V3 (2021):** V3 further innovated by introducing concentrated liquidity and multiple fee tiers. This allowed liquidity providers to allocate their funds within custom price ranges, enhancing capital efficiency and market depth.
 4. **Uniswap V4 (Expected Deployment in Q2 of 2024):** The forthcoming V4 introduces a revolutionary Singleton design, reducing gas costs and improving transaction efficiency. It consolidates all liquidity pools into a single contract and introduces advanced features like hooks, flash accounting, and direct native ETH support.
 
-### **Technical Architecture of Uniswap V4**
+### Technical Architecture of Uniswap V4
 
 Uniswap V4 introduces significant architectural advancements with its Singleton contract structure, replacing the multiple contracts per pair in earlier versions. This consolidation significantly reduces gas costs and simplifies the creation and management of liquidity pools by enabling all transactions to occur within a single contract. This not only reduces the operational overhead but also decreases the gas costs for trading and pool creation by up to 99%.
 
@@ -49,7 +49,7 @@ V4 also introduces hooks, which are customizable smart contracts that can be att
 
 Additionally, V4 supports direct trading pairs with native Ethereum (ETH), eliminating the need for wrapped ETH and streamlining the trading process. This adjustment not only simplifies the trading steps but also potentially lowers transaction fees.
 
-### **What is a Hook in Uniswap V4?**
+### What is a Hook in Uniswap V4?
 
 Hooks in Uniswap V4 are programmable smart contracts that can be attached to liquidity pools to modify their behavior at crucial operational stages, such as before and after swaps, or during liquidity changes. These hooks provide developers with the ability to implement customized functionalities, ranging from transaction validation processes to complex fee-adjustment algorithms, directly within the liquidity pool's lifecycle.
 

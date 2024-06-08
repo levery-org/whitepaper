@@ -1,10 +1,10 @@
 # Core Components
 
-### **Overview**
+### Overview
 
 Levery's hook smart contract, built atop the Uniswap V4 framework, incorporates a variety of sophisticated features designed to facilitate dynamic fee management, enforce compliance through permissions, and integrate with real-time price oracles. Core components that harness the power of decentralized finance technology to enhance functionality, compliance, and efficiency, critical for institutional adoption and regulatory approval.
 
-### **BaseHook Integration**
+### Uniswap V4 BaseHook Integration
 
 The Levery contract extends `BaseHook` from Uniswap V4's periphery, which is a foundational component allowing the integration of custom logic at specific points in the liquidity pool lifecycle. This enables Levery to implement custom behaviors for trading actions, such as swaps and liquidity management.
 
@@ -14,11 +14,11 @@ The hooks (`beforeSwap`, `beforeAddLiquidity`, `beforeRemoveLiquidity`) are cruc
 * Adjust fees based on current market data and predefined rules.
 * Ensure transactions are only executed when all compliance and risk management criteria are met.
 
-### **Permission Manager**
+### Permission Manager
 
 A vital component of Levery's contract is the `PermissionManager`. This module controls access to liquidity provision and swap actions, ensuring that only authorized users can perform these operations. It plays a critical role in maintaining compliance with regulatory standards, thereby ensuring that all trading activities align with legal requirements.
 
-### **Dynamic Fee Structure**
+### Dynamic Fee Structure
 
 At the heart of Levery's trading mechanism is the dynamic fee structure, governed by variables such as `baseFee` and `lpFeeMultiplier`. These parameters are adjustable by the admin and are used to calculate trading fees based on current market conditions and pool-specific settings.
 
@@ -29,7 +29,7 @@ At the heart of Levery's trading mechanism is the dynamic fee structure, governe
 
 Each liquidity pool can be assigned its specific price feed oracle through a mapping `poolOracles`), which stores oracle addresses and comparison flags to ensure price accuracy for fee calculations. This setup enables the contract to fetch real-time data to make informed decisions on fee adjustments.
 
-### **Pool-Specific Settings**
+### **Pool Settings**
 
 Levery's architecture includes the ability to tailor settings for individual pools via mappings that link pool identifiers to specific configurations:
 
@@ -45,7 +45,7 @@ Utilizing Chainlink's `AggregatorV3Interface` and internal libraries like `TickM
 * `getLastOraclePrice`: Fetches the latest price from a specified price feed oracle, adjusting for token decimals to ensure consistency across different assets.
 * `getCurrentPrices`: Calculates current prices within a pool, using advanced mathematical libraries like `TickMath` and `FullMath` to ensure precision.
 
-### **Admin Controls**
+### Admin Controls
 
 The contract is equipped with administrative functions that allow for high-level control and configuration:
 

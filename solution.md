@@ -4,6 +4,8 @@
 
 Levery presents a structured platform designed for financial institutions to engage with DeFi markets. By addressing critical challenges and utilizing advanced technologies, Levery enhances profitability, ensures regulatory compliance, and mitigates risks associated with decentralized finance. The key advantages include:
 
+<figure><img src=".gitbook/assets/swap-screenshot.jpg" alt=""><figcaption></figcaption></figure>
+
 ### Regulatory Compliance
 
 Designed with stringent AML and KYC frameworks, Levery enables financial institutions to participate in DeFi without compromising on compliance. This ensures that all operations on the platform meet global regulatory standards, making it a viable and attractive option for institutional investors.
@@ -24,9 +26,7 @@ Levery ensures that traders, or swappers, continue to benefit from competitive p
 
 The use of comprehensive identity checks and permission management systems guarantees a secure trading environment where all participants are verified. This transparency builds trust and facilitates smoother transactions, attracting more institutional participants to the platform.
 
-<figure><img src=".gitbook/assets/swap-screenshot.jpg" alt=""><figcaption></figcaption></figure>
-
-### Resources
+### Main Resources
 
 Levery leverages a combination of cutting-edge technology and robust compliance mechanisms to offer the following resources:
 
