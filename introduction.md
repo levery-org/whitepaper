@@ -2,7 +2,7 @@
 
 Levery is a compliance-centric gateway that empowers traditional financial institutions to harness the full potential of DeFi, ensuring that they do so securely, profitably, and within the bounds of regulatory requirements.
 
-## Traditional Financial Institutions and DeFi Challenges
+### Traditional Financial Institutions and DeFi Challenges
 
 Decentralized finance (DeFi) offers significant opportunities for asset management and investment. However, these innovations come with some challenges, especially for traditional financial institutions.
 
