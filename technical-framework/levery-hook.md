@@ -12,7 +12,7 @@ Levery's hook contract, built atop the Uniswap V4 framework, incorporates a vari
 
 Let:
 
-* $$f(x) = x * e^{2 pi i \xi x}$$$$P_0$$ and $$P_1$$ be the current prices for asset 0 and asset 1, respectively.
+* $$P_0$$ and $$P_1$$ be the current prices for asset 0 and asset 1, respectively.
 * $$M$$ be the real-time market price from the Oracle.
 * $$\alpha$$ be the liquidity provider fee multiplier.
 * $$F_{\text{base}}$$ be the base fee for the swap.
