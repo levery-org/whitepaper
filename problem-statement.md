@@ -6,7 +6,7 @@ Decentralized exchanges (DEXs) represent a significant shift from traditional fi
 
 The inherently anonymous nature of transactions on most DEXs stands in stark contrast to these compliance requirements. Without identity verification mechanisms, it becomes nearly impossible for financial institutions to ensure that their services are not misused for illicit activities. This lack of compliance infrastructure not only exposes these institutions to potential legal and reputational risks but also limits their ability to engage with these innovative markets without breaching regulatory standards. Furthermore, the decentralized nature of these platforms disperses the responsibility for regulatory adherence across all participants, which complicates the enforcement of compliance standards.
 
-Consequently, there is a crucial need for mechanisms that bridge the gap between the autonomy of DeFi and the regulatory requirements of traditional financial markets. These mechanisms must provide robust identity verification and compliance checks that align with global financial regulations, while still respecting the decentralized ethos of the blockchain space.
+Consequently, there is a crucial need for mechanisms that bridge the gap between the Automated Market Maker (AMM) solution from DEXs and the regulatory requirements of traditional financial markets. These mechanisms must provide robust identity verification and compliance checks that align with global financial regulations, while still respecting the decentralized ethos of the blockchain space.
 
 ### Impermanent Loss in DEX Pools
 
@@ -18,7 +18,7 @@ Toxic arbitrage refers to arbitrage trading that, rather than aligning prices an
 
 **Price Latency**
 
-DEXs can not instantaneously reflect live market prices. Price updates in a DEX pool often lag behind those in more centralized markets due to the decentralized nature of blockchain confirmations and updates. This latency can be exploited by arbitrageurs who use sophisticated strategies and faster trading systems to buy assets at a lower price on a DEX and sell them at a higher price on a real-time exchange, effectively removing value from the liquidity pool.
+DEXs can not instantaneously reflect live market prices. Due to their decentralized nature, DEXs do not update prices instantaneously like centralized exchanges (CEXs). Instead, prices in a DEX are determined by the ratios of assets in liquidity pools, and these ratios change as traders add or remove liquidity or execute trades. Price updates in a DEX pool often lag behind those in more centralized markets due to the decentralized nature of blockchain confirmations and updates. This latency can be exploited by arbitrageurs who use sophisticated strategies and faster trading systems to buy assets at a lower price on a DEX and sell them at a higher price on a real-time exchange, effectively removing value from the liquidity pool.
 
 **Correlation Divergence**
 

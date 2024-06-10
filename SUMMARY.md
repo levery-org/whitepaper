@@ -7,8 +7,8 @@
 
 ## Technical Framework
 
-* [Core Components](technical-framework/core-components.md)
 * [Levery Hook - Uniswap V4](technical-framework/levery-hook-uniswap-v4.md)
+* [Core Components](technical-framework/core-components.md)
 * [Price Feed Oracle](technical-framework/price-feed-oracle-integration.md)
 * [Safe App](technical-framework/safe-app.md)
 
