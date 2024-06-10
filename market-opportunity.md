@@ -1,5 +1,7 @@
 # Market Opportunity
 
+## Enable Traditional Financial Institutions to Trade RWA on DEX
+
 According to the World Economic Forum [¹](market-opportunity.md#references), blockchain technology has the potential to transform financial markets worth approximately $867 trillion, encompassing equity markets, debt markets, securitized products, derivatives, securities financing, and asset management. Tokenizing these assets represents a significant opportunity, enabling real-world assets to be traded on decentralized platforms.
 
 | Current Crypto Market Cap                           | Oportunity in Traditional Financial Market |

@@ -16,6 +16,8 @@ Accurate price information is essential for fair trade execution on Levery's pla
 
 By integrating timely and accurate price data, Levery can identify and mitigate potential arbitrage opportunities that could be exploited due to price discrepancies across different markets. This ensures that the platform remains secure and profitable for all users.
 
+***
+
 ## How the Price Oracles Works
 
 ### Data Aggregation

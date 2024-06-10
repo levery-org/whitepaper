@@ -11,7 +11,9 @@ Uniswap is a decentralized exchange (DEX) that has significantly shaped the dece
 3. **Uniswap V3 (2021):** V3 further innovated by introducing concentrated liquidity and multiple fee tiers. This allowed liquidity providers to allocate their funds within custom price ranges, enhancing capital efficiency and market depth.
 4. **Uniswap V4 (Expected Deployment in Q2 of 2024):** The forthcoming V4 introduces a revolutionary Singleton design, reducing gas costs and improving transaction efficiency. It consolidates all liquidity pools into a single contract and introduces advanced features like hooks, flash accounting, and direct native ETH support.
 
-### Technical Architecture of Uniswap V4
+***
+
+## Technical Architecture of Uniswap V4
 
 Uniswap V4 introduces significant architectural advancements with its Singleton contract structure, replacing the multiple contracts per pair in earlier versions. This consolidation significantly reduces gas costs and simplifies the creation and management of liquidity pools by enabling all transactions to occur within a single contract. This not only reduces the operational overhead but also decreases the gas costs for trading and pool creation by up to 99%.
 

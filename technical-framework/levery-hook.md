@@ -1,28 +1,69 @@
 # Levery Hook
 
-## **Levery’s Strategic Use of Uniswap V4 Hooks**
+## Overview
 
 Levery's hook contract, built atop the Uniswap V4 framework, incorporates a variety of sophisticated features designed to facilitate dynamic fee management, enforce compliance through permissions, and integrate with price feed oracles. Core components that harness the power of decentralized finance technology to enhance functionality, compliance, and efficiency, critical for institutional adoption and regulatory approval.
 
 <figure><img src="../.gitbook/assets/hook-swap-flow.jpg" alt=""><figcaption></figcaption></figure>
 
-### Mitigation of Impermanent Loss
+***
 
-Hooks provide Levery with the ability to dynamically adjust transaction fees based on real-time market data sourced from oracles. By aligning fees with current market dynamics, Levery helps protect liquidity providers from impermanent loss. This is achieved by adjusting the fees in response to price fluctuations and market conditions, ensuring that liquidity providers are adequately compensated.
+## Dynamic Fee Calculation
 
-### Enhanced Liquidity Provider Returns
+Let:
 
-The dynamic adjustment of fees ensures that liquidity providers can maximize their returns under varying market conditions. By tailoring fees to reflect real-time data, Levery creates a more attractive environment for liquidity providers, promoting deeper and more stable liquidity pools.
+* $$f(x) = x * e^{2 pi i \xi x}$$$$P_0$$ and $$P_1$$ be the current prices for asset 0 and asset 1, respectively.
+* $$M$$ be the real-time market price from the Oracle.
+* $$\alpha$$ be the liquidity provider fee multiplier.
+* $$F_{\text{base}}$$ be the base fee for the swap.
+* $$F_{\text{pool}}$$ be the pool-specific fee for the swap, which takes precedence over $$F_{\text{base}}$$ if defined.
 
-### Compliance Requirements
+### Initial Swap Fee Definition
 
-Levery utilizes the `PermissionManager` component to enforce compliance controls over who can participate in swaps and liquidity operations. This capability, enabled by the flexibility of Uniswap V4 hooks, integrates comprehensive Know Your Customer (KYC) and Anti-Money Laundering (AML) checks directly into the transaction flow. By ensuring that only verified and compliant users can engage in trading and liquidity activities, Levery aligns with regulatory standards and mitigates potential compliance risks.
+The initial swap fee $$F_{\text{swap}}$$ is defined as:
 
-**Fraud Detection and Response:** A critical strategic use of the hooks is the ability to freeze liquidity or block swaps for specific users if fraud is detected. For instance, if a compliance risk is identified or if there is a request from authorities to block a user, Levery can temporarily halt that user's ability to perform swaps or add/remove liquidity. It is important to note that while Levery can restrict actions to maintain compliance and security, the protocol does not allow the use or transfer of users' funds without their consent.
+$$
+F_{\text{swap}} = \begin{cases} F_{\text{pool}} & \text{if } F_{\text{pool}} \neq 0 \\ F_{\text{base}} & \text{otherwise} \end{cases}
+$$
 
-### Operational Efficiency
+### Price Comparison and Fee Adjustment
 
-Uniswap V4’s architecture, supported by hook functionalities, significantly enhances operational efficiency for Levery. The Singleton contract model consolidates all pools into a single contract, which reduces the gas costs and complexity associated with deploying multiple contracts. This results in faster and more cost-effective execution of complex multi-step transactions, benefiting users and liquidity providers alike.
+If a market price oracle is defined, we adjust $$F_{\text{swap}}$$ based on the price comparison:
+
+**If `compareWithPrice0` is true:**
+
+$$
+F_{\text{swap}} = \begin{cases} F_{\text{swap}} + \left( \frac{P_0 - M}{M} \times \alpha \right) & \text{if } P_0 > M \text{ and } \text{params.zeroForOne} \\ F_{\text{swap}} + \left( \frac{M - P_0}{M} \times \alpha \right) & \text{if } P_0 < M \text{ and not } \text{params.zeroForOne} \\ F_{\text{swap}} & \text{otherwise} \end{cases}
+$$
+
+**Else:**
+
+$$
+F_{\text{swap}} = \begin{cases} F_{\text{swap}} + \left( \frac{M - P_1}{M} \times \alpha \right) & \text{if } P_1 < M \text{ and } \text{params.zeroForOne} \\ F_{\text{swap}} + \left( \frac{P_1 - M}{M} \times \alpha \right) & \text{if } P_1 > M \text{ and not } \text{params.zeroForOne} \\ F_{\text{swap}} & \text{otherwise} \end{cases}
+$$
+
+#### Final Fee Update
+
+The updated swap fee is used to update the dynamic LP fee:
+
+$$
+\text{poolManager.updateDynamicLPFee}(key, F_{\text{swap}})
+$$
+
+### Description of the Calculations
+
+The above calculations determine the dynamic swap fee ($$F_{\text{swap}}$$) by comparing the current asset prices ($$P_0$$and $$P_1$$) with the real-time market price ($$M$$) obtained from an oracle. The liquidity provider fee multiplier ( $$\alpha$$) is used to proportionally adjust the swap fee based on the price difference.
+
+* If the current price of asset 0 ($$P_0$$) is greater than the market price ($$M$$) and the swap is from asset 0 to asset 1 ($$\text{params.zeroForOne}$$), the fee is increased proportionally to the difference.
+* If the current price of asset 0 ($$P_0$$) is less than the market price ($$M$$) and the swap is from asset 1 to asset 0 ($$\text{not params.zeroForOne}$$), the fee is also increased proportionally to the difference.
+* Similarly, if the current price of asset 1 ($$P_1$$) is less than the market price ($M$) and the swap is from asset 0 to asset 1 ($\text{params.zeroForOne}$), the fee is increased proportionally.
+* If the current price of asset 1 ($P\_1$) is greater than the market price ($$M$$) and the swap is from asset 1 to asset 0 ($$\text{not params.zeroForOne}$$), the fee is increased proportionally.
+
+In all other cases (i.e., if none of these specific conditions are met), the swap fee remains unchanged.
+
+This ensures that the swap fee dynamically adjusts to market conditions, providing a more accurate and fair fee structure for liquidity providers.
+
+***
 
 ## Levery Hook Core Components
 
@@ -35,10 +76,6 @@ The hooks (`beforeSwap`, `beforeAddLiquidity`, `beforeRemoveLiquidity`) are cruc
 * Enforce permissions dynamically.
 * Adjust fees based on current market data and predefined rules.
 * Ensure transactions are only executed when all compliance and risk management criteria are met.
-
-### Permission Manager
-
-A vital component of Levery's contract is the `PermissionManager`. This module controls access to liquidity provision and swap actions, ensuring that only authorized users can perform these operations. It plays a critical role in maintaining compliance with regulatory standards, thereby ensuring that all trading activities align with legal requirements.
 
 ### Dynamic Fee Structure
 
@@ -67,6 +104,10 @@ Utilizing Chainlink's `AggregatorV3Interface` and internal libraries like `TickM
 * `getLastOraclePrice`: Fetches the latest price from a specified price feed oracle, adjusting for token decimals to ensure consistency across different assets.
 * `getCurrentPrices`: Calculates current prices within a pool, using advanced mathematical libraries like `TickMath` and `FullMath` to ensure precision.
 
+### Permission Manager
+
+A vital component of Levery's contract is the `PermissionManager`. This module controls access to liquidity provision and swap actions, ensuring that only authorized users can perform these operations. It plays a critical role in maintaining compliance with regulatory standards, thereby ensuring that all trading activities align with legal requirements.
+
 ### Admin Controls
 
 The contract is equipped with administrative functions that allow for high-level control and configuration:
@@ -78,3 +119,25 @@ The contract is equipped with administrative functions that allow for high-level
 {% hint style="info" %}
 Levery Hook GitHub Repository: [https://github.com/levery-org/levery-hook](https://github.com/levery-org/levery-hook)
 {% endhint %}
+
+***
+
+## **Levery’s Strategic Use of Uniswap V4 Hooks**
+
+### Mitigation of Impermanent Loss
+
+Hooks provide Levery with the ability to dynamically adjust transaction fees based on real-time market data sourced from oracles. By aligning fees with current market dynamics, Levery helps protect liquidity providers from impermanent loss. This is achieved by adjusting the fees in response to price fluctuations and market conditions, ensuring that liquidity providers are adequately compensated.
+
+### Enhanced Liquidity Provider Returns
+
+The dynamic adjustment of fees ensures that liquidity providers can maximize their returns under varying market conditions. By tailoring fees to reflect real-time data, Levery creates a more attractive environment for liquidity providers, promoting deeper and more stable liquidity pools.
+
+### Compliance Requirements
+
+Levery utilizes the `PermissionManager` component to enforce compliance controls over who can participate in swaps and liquidity operations. This capability, enabled by the flexibility of Uniswap V4 hooks, integrates comprehensive Know Your Customer (KYC) and Anti-Money Laundering (AML) checks directly into the transaction flow. By ensuring that only verified and compliant users can engage in trading and liquidity activities, Levery aligns with regulatory standards and mitigates potential compliance risks.
+
+**Fraud Detection and Response:** A critical strategic use of the hooks is the ability to freeze liquidity or block swaps for specific users if fraud is detected. For instance, if a compliance risk is identified or if there is a request from authorities to block a user, Levery can temporarily halt that user's ability to perform swaps or add/remove liquidity. It is important to note that while Levery can restrict actions to maintain compliance and security, the protocol does not allow the use or transfer of users' funds without their consent.
+
+### Operational Efficiency
+
+Uniswap V4’s architecture, supported by hook functionalities, significantly enhances operational efficiency for Levery. The Singleton contract model consolidates all pools into a single contract, which reduces the gas costs and complexity associated with deploying multiple contracts. This results in faster and more cost-effective execution of complex multi-step transactions, benefiting users and liquidity providers alike.

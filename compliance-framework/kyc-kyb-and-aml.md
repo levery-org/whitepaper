@@ -1,6 +1,6 @@
 # KYC / KYB
 
-### The Role of KYC / KYB
+## The Role of KYC / KYB
 
 Know Your Customer (KYC) and Know Your Business (KYB) are essential practices for financial institutions to identify and verify the identity of their clients. These processes are fundamental for preventing fraud, money laundering, and other illegal activities by ensuring that institutions are not inadvertently facilitating illicit financial activities.
 
