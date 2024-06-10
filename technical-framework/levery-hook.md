@@ -1,8 +1,30 @@
-# Core Components
+# Levery Hook
 
-### Overview
+## **Levery’s Strategic Use of Uniswap V4 Hooks**
 
-Levery's hook smart contract, built atop the Uniswap V4 framework, incorporates a variety of sophisticated features designed to facilitate dynamic fee management, enforce compliance through permissions, and integrate with real-time price oracles. Core components that harness the power of decentralized finance technology to enhance functionality, compliance, and efficiency, critical for institutional adoption and regulatory approval.
+Levery's hook contract, built atop the Uniswap V4 framework, incorporates a variety of sophisticated features designed to facilitate dynamic fee management, enforce compliance through permissions, and integrate with price feed oracles. Core components that harness the power of decentralized finance technology to enhance functionality, compliance, and efficiency, critical for institutional adoption and regulatory approval.
+
+<figure><img src="../.gitbook/assets/hook-swap-flow.jpg" alt=""><figcaption></figcaption></figure>
+
+### Mitigation of Impermanent Loss
+
+Hooks provide Levery with the ability to dynamically adjust transaction fees based on real-time market data sourced from oracles. By aligning fees with current market dynamics, Levery helps protect liquidity providers from impermanent loss. This is achieved by adjusting the fees in response to price fluctuations and market conditions, ensuring that liquidity providers are adequately compensated.
+
+### Enhanced Liquidity Provider Returns
+
+The dynamic adjustment of fees ensures that liquidity providers can maximize their returns under varying market conditions. By tailoring fees to reflect real-time data, Levery creates a more attractive environment for liquidity providers, promoting deeper and more stable liquidity pools.
+
+### Compliance Requirements
+
+Levery utilizes the `PermissionManager` component to enforce compliance controls over who can participate in swaps and liquidity operations. This capability, enabled by the flexibility of Uniswap V4 hooks, integrates comprehensive Know Your Customer (KYC) and Anti-Money Laundering (AML) checks directly into the transaction flow. By ensuring that only verified and compliant users can engage in trading and liquidity activities, Levery aligns with regulatory standards and mitigates potential compliance risks.
+
+**Fraud Detection and Response:** A critical strategic use of the hooks is the ability to freeze liquidity or block swaps for specific users if fraud is detected. For instance, if a compliance risk is identified or if there is a request from authorities to block a user, Levery can temporarily halt that user's ability to perform swaps or add/remove liquidity. It is important to note that while Levery can restrict actions to maintain compliance and security, the protocol does not allow the use or transfer of users' funds without their consent.
+
+### Operational Efficiency
+
+Uniswap V4’s architecture, supported by hook functionalities, significantly enhances operational efficiency for Levery. The Singleton contract model consolidates all pools into a single contract, which reduces the gas costs and complexity associated with deploying multiple contracts. This results in faster and more cost-effective execution of complex multi-step transactions, benefiting users and liquidity providers alike.
+
+## Levery Hook Core Components
 
 ### Uniswap V4 BaseHook Integration
 
@@ -53,5 +75,6 @@ The contract is equipped with administrative functions that allow for high-level
 * `updateBaseFee` and `setPoolBaseFee`: These functions allow the admin to adjust fee parameters globally or per pool, responding to evolving market dynamics.
 * `setPermissionManager`: Assigns a new `PermissionManager`, updating the contract's access control logic.
 
-
-
+{% hint style="info" %}
+Levery Hook GitHub Repository: [https://github.com/levery-org/levery-hook](https://github.com/levery-org/levery-hook)
+{% endhint %}

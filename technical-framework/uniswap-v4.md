@@ -1,34 +1,6 @@
-# Levery Hook - Uniswap V4
+# Uniswap V4
 
-## **Levery’s Strategic Use of Uniswap V4 Hooks**
-
-Levery leverages the innovative features of Uniswap V4 hooks to enhance regulatory compliance, operational efficiency, and security within its decentralized finance (DeFi) platform. This strategic use of hooks allows Levery to address the stringent requirements of financial institutions while ensuring a seamless and secure trading experience for its users.
-
-<figure><img src="../.gitbook/assets/hook-swap-flow.jpg" alt=""><figcaption></figcaption></figure>
-
-### Compliance Through Permission Management
-
-Levery utilizes the `PermissionManager` component to enforce compliance controls over who can participate in swaps and liquidity operations. This capability, enabled by the flexibility of Uniswap V4 hooks, integrates comprehensive Know Your Customer (KYC) and Anti-Money Laundering (AML) checks directly into the transaction flow. By ensuring that only verified and compliant users can engage in trading and liquidity activities, Levery aligns with regulatory standards and mitigates potential compliance risks.
-
-**Fraud Detection and Response:** A critical strategic use of the hooks is the ability to freeze liquidity or block swaps for specific users if fraud is detected. For instance, if a compliance risk is identified or if there is a request from authorities to block a user, Levery can temporarily halt that user's ability to perform swaps or add/remove liquidity. It is important to note that while Levery can restrict actions to maintain compliance and security, the protocol does not allow the use or transfer of users' funds without their consent.
-
-### Mitigation of Impermanent Loss
-
-Hooks provide Levery with the ability to dynamically adjust transaction fees based on real-time market data sourced from oracles. By aligning fees with current market dynamics, Levery helps protect liquidity providers from impermanent loss. This is achieved by adjusting the fees in response to price fluctuations and market conditions, ensuring that liquidity providers are adequately compensated.
-
-### Enhanced Liquidity Provider Returns
-
-The dynamic adjustment of fees ensures that liquidity providers can maximize their returns under varying market conditions. By tailoring fees to reflect real-time data, Levery creates a more attractive environment for liquidity providers, promoting deeper and more stable liquidity pools.
-
-### Operational Efficiency
-
-Uniswap V4’s architecture, supported by hook functionalities, significantly enhances operational efficiency for Levery. The Singleton contract model consolidates all pools into a single contract, which reduces the gas costs and complexity associated with deploying multiple contracts. This results in faster and more cost-effective execution of complex multi-step transactions, benefiting users and liquidity providers alike.
-
-{% hint style="info" %}
-Levery Hook GitHub Repository: [https://github.com/levery-org/levery-hook](https://github.com/levery-org/levery-hook)
-{% endhint %}
-
-## **Introduction to Uniswap**
+## **Overview**
 
 Uniswap, a prominent decentralized exchange (DEX), has significantly shaped the DeFi landscape by providing an automated mechanism for token exchanges. It uses liquidity pools instead of traditional market orders, allowing for decentralized, permissionless trading.
 
