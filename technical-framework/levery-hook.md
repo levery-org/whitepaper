@@ -56,7 +56,7 @@ The above calculations determine the dynamic swap fee ($$F_{\text{swap}}$$) by c
 
 * If the current price of asset 0 ($$P_0$$) is greater than the market price ($$M$$) and the swap is from asset 0 to asset 1 ($$\text{params.zeroForOne}$$), the fee is increased proportionally to the difference.
 * If the current price of asset 0 ($$P_0$$) is less than the market price ($$M$$) and the swap is from asset 1 to asset 0 ($$\text{not params.zeroForOne}$$), the fee is also increased proportionally to the difference.
-* Similarly, if the current price of asset 1 ($$P_1$$) is less than the market price ($M$) and the swap is from asset 0 to asset 1 ($$\text{params.zeroForOne}$$), the fee is increased proportionally.
+* Similarly, if the current price of asset 1 ($$P_1$$) is less than the market price ($$M$$) and the swap is from asset 0 to asset 1 ($$\text{params.zeroForOne}$$), the fee is increased proportionally.
 * If the current price of asset 1 ( $$P_1$$) is greater than the market price ($$M$$) and the swap is from asset 1 to asset 0 ($$\text{not params.zeroForOne}$$), the fee is increased proportionally.
 
 In all other cases (i.e., if none of these specific conditions are met), the swap fee remains unchanged.
@@ -122,7 +122,7 @@ Levery Hook GitHub Repository: [https://github.com/levery-org/levery-hook](https
 
 ***
 
-## **Levery’s Strategic Use of Uniswap V4 Hooks**
+## **Levery’s Strategic Use of Uniswap V4 Hooks** Capabilities
 
 ### Mitigation of Impermanent Loss
 

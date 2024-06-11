@@ -14,7 +14,7 @@ Accurate price information is essential for fair trade execution on Levery's pla
 
 ### Mitigating Arbitrage Risks
 
-By integrating timely and accurate price data, Levery can identify and mitigate potential arbitrage opportunities that could be exploited due to price discrepancies across different markets. This ensures that the platform remains secure and profitable for all users.
+By integrating timely and accurate price data, Levery can identify and mitigate potential toxic arbitrage opportunities that could be exploited due to price discrepancies across different markets. This ensures that the platform remains secure and profitable for all users.
 
 ***
 
