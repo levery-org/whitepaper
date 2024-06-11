@@ -38,13 +38,13 @@ Addressing these problems requires sophisticated solutions that can align DEX fu
 
 Financial institutions face significant risks when dealing with centralized exchanges (CEXs), particularly due to counterparty risk and the history of fraud associated with some exchanges. High-profile incidents, such as the collapse of FTX and other exchanges, have highlighted the vulnerabilities inherent in centralized systems.
 
-### Counterparty Risk
+### Centralized Custody of Assets
 
-When financial institutions engage in transactions through CEXs, they are exposed to the risk that the counterparty might default on their obligations. This risk is heightened by the lack of transparency in the operations of some CEXs, making it difficult to assess the financial health and integrity of the exchange.
+Financial institutions face substantial risks when engaging in transactions through centralized exchanges (CEXs), primarily due to the centralized custody of assets. This structure means that funds are held and managed by the exchange, requiring users to trust that the CEX will not default on its obligations. The lack of transparency in some CEX operations further complicates the assessment of their financial health and integrity.
 
 ### History of Fraud and Insolvency
 
-The history of fraud and insolvency in CEXs has led to significant financial losses for users. Incidents like the FTX collapse underscore the dangers of relying on centralized entities that may engage in fraudulent activities or face liquidity crises. These events erode trust and highlight the need for decentralized solutions that mitigate such risks.
+The history of fraud and insolvency in CEXs has led to significant financial losses for users. High-profile incidents, such as the collapse of FTX, have highlighted the vulnerabilities inherent in centralized systems. These events underscore the dangers of relying on centralized entities that may engage in fraudulent activities or face liquidity crises, eroding trust and highlighting the need for decentralized solutions to mitigate such risks.
 
 ***
 
