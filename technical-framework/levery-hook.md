@@ -86,7 +86,7 @@ At the heart of Levery's trading mechanism is the dynamic fee structure, governe
 
 ### Pool-Specific Oracle Integration
 
-Each liquidity pool can be assigned its specific price feed oracle through a mapping `poolOracles`), which stores oracle addresses and comparison flags to ensure price accuracy for fee calculations. This setup enables the contract to fetch real-time data to make informed decisions on fee adjustments.
+Each liquidity pool can be assigned its specific price feed oracle through a mapping `poolOracles`, which stores oracle addresses and comparison flags to ensure price accuracy for fee calculations. This setup enables the contract to fetch real-time data to make informed decisions on fee adjustments.
 
 ### **Pool Settings**
 
