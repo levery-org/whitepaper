@@ -53,5 +53,6 @@ The user verification process in Levery involves some key steps to ensure that a
 
 1. **Information Collection:** Users are required to provide personal or business information, including identification documents, proof of address, and other relevant details.
 2. **Document Verification:** Advanced tools are used to verify the authenticity of the provided documents. This includes checking the validity of IDs, comparing faces in selfies with ID photos, and verifying addresses.
-3. **Background Checks:** For business entities, additional checks are conducted to verify business registration documents, beneficial ownership, and financial records.
-4. **Ongoing Monitoring:** Once verified, user activities are continuously monitored to detect and prevent any suspicious or fraudulent activities. This ongoing monitoring ensures that the platform remains secure and compliant.
+3. **Biometric Face Verification:** Ensures that access to the platform is granted only to trusted users. It upgrades from traditional selfie checks to advanced AI-driven Liveness and Face Match technology, effectively preventing fake identities and deepfakes.
+4. **Background Checks:** For business entities, additional checks are conducted to verify business registration documents, beneficial ownership, and financial records.
+5. **Ongoing Monitoring:** Once verified, user activities are continuously monitored to detect and prevent any suspicious or fraudulent activities. This ongoing monitoring ensures that the platform remains secure and compliant.
