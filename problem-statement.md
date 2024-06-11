@@ -16,7 +16,7 @@ Impermanent loss is a pervasive risk for liquidity providers (LPs) in decentrali
 
 ### Toxic Arbitrage
 
-Toxic arbitrage refers to arbitrage trading that, rather than aligning prices and adding efficiency to the market, actually extracts value from liquidity providers. Arbitrageurs can exacerbate the effects of price latency by systematically exploiting these inefficiencies, which can significantly increase the impermanent loss for unsuspecting LPs. This form of arbitrage is particularly harmful in pools with high price volatility and slow update mechanisms.
+Toxic arbitrage refers to arbitrage trading that, rather than aligning prices and adding efficiency to the market, actually extracts value from liquidity providers. Arbitrageurs can exacerbate the effects of price latency by systematically exploiting these inefficiencies, which can significantly increase the impermanent loss for LPs. This form of arbitrage is particularly harmful in pools with high price volatility and slow update mechanisms.
 
 ### Price Latency
 
