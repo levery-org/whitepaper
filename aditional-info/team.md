@@ -18,11 +18,11 @@ Their experience spans technical and regulatory frameworks, integrating digital 
 
 ### Thanks to the Mentors of Uniswap Hook Incubator Cohort 1
 
-Haardik | [https://www.haardik.dev](https://www.haardik.dev/) | [https://x.com/haardikkk](https://x.com/haardikkk) | [https://github.com/haardikk21](https://github.com/haardikk21)
+Sauce, Uniswap Foundation | [https://x.com/saucepoint](https://x.com/saucepoint) | [https://github.com/saucepoint](https://github.com/saucepoint)&#x20;
 
-saucepoint | [https://x.com/saucepoint](https://x.com/saucepoint) | [https://github.com/saucepoint](https://github.com/saucepoint)
+Haardik, Uniswap Hook Incubator and LearnWeb3 | [https://www.haardik.dev](https://www.haardik.dev/) | [https://x.com/haardikkk](https://x.com/haardikkk) | [https://github.com/haardikk21](https://github.com/haardikk21)
 
-Zefram | [https://zefram.eth.limo](https://zefram.eth.limo/) | [https://x.com/boredGenius](https://x.com/boredGenius)
+Zefram, Bunni and Sudoswap | [https://zefram.eth.limo](https://zefram.eth.limo/) | [https://x.com/boredGenius](https://x.com/boredGenius)
 
 ***
 

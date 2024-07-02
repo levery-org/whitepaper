@@ -16,7 +16,7 @@ Levery’s decentralized nature eliminates the counterparty risk associated with
 
 ### Mitigation of Impermanent Loss and Toxic Arbitrage
 
-Levery enhances profitability for liquidity providers by leveraging Uniswap V4's hooks to implement dynamic fees based on real-time data from price feed oracles. These oracles supply crucial market price information, allowing for precise adjustments of dynamic fees to maintain fair pricing and mitigate toxic arbitrage risks. This mechanism optimizes returns on investments for liquidity providers and significantly reduces the impact of impermanent loss by ensuring that pool prices reflect current market conditions.
+Levery enhances profitability for liquidity providers by implementing dynamic fees based on real-time data from price feed oracles. These oracles supply crucial market price information, allowing for precise adjustments of dynamic fees to maintain fair pricing and mitigate toxic arbitrage risks. This mechanism optimizes returns on investments for liquidity providers and significantly reduces the impact of impermanent loss by ensuring that pool prices reflect current market conditions.
 
 ### Advantages for Swappers
 

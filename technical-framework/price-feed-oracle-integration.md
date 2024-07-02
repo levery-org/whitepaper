@@ -2,7 +2,7 @@
 
 ## **Levery’s Use of Price Oracles**
 
-Levery integrates Chainlink's Price Feed oracle to access accurate and dependable market price data, which is essential for maintaining equitable pricing and computing dynamic fees within its platform. Utilizing a sophisticated Decentralized Data Model along with Offchain Reporting (OCR) protocol, these price feeds aggregate data effectively. This approach allows Levery to guarantee the integrity and precision of its calculations, ensuring that all pricing and LP fee adjustments are grounded in reliable and current market information.
+Levery integrates price feed oracles to access accurate and dependable market price data, which is essential for maintaining equitable pricing and computing dynamic fees within its platform. Utilizing a sophisticated Decentralized Data Model along with Offchain Reporting (OCR) protocol, these price feeds aggregate data effectively. This approach allows Levery to guarantee the integrity and precision of its calculations, ensuring that all pricing and LP fee adjustments are grounded in reliable and current market information.
 
 ### Dynamic Fee Calculation
 

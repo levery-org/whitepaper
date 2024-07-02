@@ -8,8 +8,7 @@
 
 ## Technical Framework
 
-* [Levery Hook](technical-framework/levery-hook.md)
-* [Uniswap V4](technical-framework/uniswap-v4.md)
+* [Smart Contracts](technical-framework/smart-contracts.md)
 * [Price Feed Oracle](technical-framework/price-feed-oracle-integration.md)
 * [Safe App](technical-framework/safe-app.md)
 
