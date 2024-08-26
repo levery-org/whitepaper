@@ -2,9 +2,9 @@
 
 * [Levery Whitepaper](README.md)
 * [Introduction](introduction.md)
-* [DEX Challenges](dex-challenges.md)
-* [Solution](solution.md)
 * [Market Opportunity](market-opportunity.md)
+* [DEX Challenges](problem-statement.md)
+* [Solution](solution.md)
 
 ## Technical Framework
 
