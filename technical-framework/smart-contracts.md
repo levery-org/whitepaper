@@ -4,7 +4,7 @@
 
 Levery's smart contracts incorporates a variety of sophisticated features designed to facilitate dynamic fee management, enforce compliance through permissions, and integrate with price feed oracles. Core components that harness the power of decentralized finance technology to enhance functionality, compliance, and efficiency, critical for institutional adoption and regulatory approval.
 
-<figure><img src="../.gitbook/assets/hook-swap-flow.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/workflow-diagram.jpg" alt=""><figcaption></figcaption></figure>
 
 ***
 
