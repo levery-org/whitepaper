@@ -67,13 +67,15 @@ This ensures that the swap fee dynamically adjusts to market conditions, providi
 
 ## Levery's Core Components
 
-### Permissionless AMM Mechanism Integration
+### Permissioned AMM Mechanism Integration
 
-Levery integrates with AMM encoded flags mechanism for permissionless execution of the smart contracts function, a fundamental component that allows the use of custom logic at specific points in the liquidity pool lifecycle. This enables Levery to implement custom behaviors for trading actions, such as:
+Unlike traditional decentralized exchanges (DEXs) that offer anonymity and purely non-custodial transactions, Levery introduces a permissioned Automated Market Maker (AMM) mechanism. While maintaining the benefits of non-custodial, peer-to-peer transactions, Levery ensures that all smart contract functions are executed with permissioned controls. This means that identity verification and risk analysis are integral parts of every transaction, allowing financial institutions to operate in compliance with regulatory requirements.
 
-* Enforce permissions dynamically.
-* Adjust fees based on current market data and predefined rules.
-* Ensure transactions are only executed when all compliance and risk management criteria are met.
+Levery integrates an AMM encoded flags mechanism for permissioned execution of the smart contract functions — a fundamental component that enables custom logic at specific points in the liquidity pool lifecycle. This allows Levery to implement tailored behaviors for trading actions, such as:
+
+* **Dynamic Permission Enforcement:** Permissions are enforced in real-time by verifying user identities and access rights before executing transactions, ensuring only authorized participants engage in trading activities.
+* **Adaptive Fee Adjustments:** Fees can be adjusted based on current market data and predefined rules, allowing for flexible fee structures that respond to changing market conditions.
+* **Compliance and Risk Management Validation:** Transactions are executed only when all compliance checks and risk management criteria are met, aligning operations with regulatory standards and mitigating potential risks
 
 ### Dynamic Fee Structure
 
