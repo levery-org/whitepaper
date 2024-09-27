@@ -67,9 +67,9 @@ This ensures that the swap fee dynamically adjusts to market conditions, providi
 
 ## Levery's Core Components
 
-### Uniswap V4 BaseHook Integration
+### Permissionless AMM Mechanism Integration
 
-Levery integrates with Uniswap V4, which is a foundational component allowing the integration of custom logic at specific points in the liquidity pool lifecycle. This enables Levery to implement custom behaviors for trading actions, such as:
+Levery integrates with AMM encoded flags mechanism for permissionless execution of the smart contracts function, a fundamental component that allows the use of custom logic at specific points in the liquidity pool lifecycle. This enables Levery to implement custom behaviors for trading actions, such as:
 
 * Enforce permissions dynamically.
 * Adjust fees based on current market data and predefined rules.
